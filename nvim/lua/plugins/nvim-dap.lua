@@ -63,6 +63,20 @@ return {
   end,
   opts = function()
     local dap = require("dap")
+    if not dap.adapters["codelldb"] then
+      require("dap").adapters["codelldb"] = {
+        type = "server",
+        host = "localhost",
+        port = "${port}",
+        executable = {
+          command = "codelldb",
+          args = {
+            "--port",
+            "${port}",
+          },
+        },
+      }
+    end
     if not dap.adapters["gdb"] then
       require("dap").adapters["gdb"] = {
         type = "executable",
@@ -99,6 +113,22 @@ return {
         },
         {
           type = "gdb",
+          request = "attach",
+          name = "Attach to process",
+          pid = require("dap.utils").pick_process,
+          cwd = "${workspaceFolder}",
+        },
+        {
+          type = "codelldb",
+          request = "launch",
+          name = "Launch file",
+          program = function()
+            return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+          end,
+          cwd = "${workspaceFolder}",
+        },
+        {
+          type = "codelldb",
           request = "attach",
           name = "Attach to process",
           pid = require("dap.utils").pick_process,
