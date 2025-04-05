@@ -10,7 +10,6 @@
         coreutils
         gdb
         inkscape-with-extensions
-        make
       ];
     };
   };
