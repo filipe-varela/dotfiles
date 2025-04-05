@@ -5,10 +5,7 @@
       paths = [
         neovim
         fish
-        lazygit
         texliveFull
-        coreutils
-        gdb
         inkscape-with-extensions
       ];
     };
