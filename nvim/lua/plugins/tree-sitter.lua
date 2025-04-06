@@ -18,6 +18,12 @@ return {
       "git_rebase",
       "gitignore",
       "gitattributes",
+      "bibtex",
+    },
+    highlight = {
+      disable = {
+        "latex",
+      },
     },
   },
 }
