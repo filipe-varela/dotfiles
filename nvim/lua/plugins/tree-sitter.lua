@@ -19,10 +19,12 @@ return {
       "gitignore",
       "gitattributes",
       "bibtex",
+      "latex",
     },
     highlight = {
       disable = {
         "latex",
+        "bibtex",
       },
     },
   },
