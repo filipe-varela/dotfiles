@@ -7,6 +7,7 @@
         fish
         texliveFull
         inkscape-with-extensions
+        sioyek
       ];
     };
   };
