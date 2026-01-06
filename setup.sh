@@ -8,3 +8,4 @@ ln -sf "$PWD/alacritty" "$XDG_CONFIG_HOME"/alacritty
 ln -sTf "$PWD/.Xresources" "$HOME/.Xresources"
 ln -sTf "$PWD/.profile" "$HOME/.profile"
 ln -sTf "$PWD/fish" "$XDG_CONFIG_HOME"/fish
+ln -sTf "$PWD/tmux/.tmux.conf" "$HOME"/.tmux.conf
