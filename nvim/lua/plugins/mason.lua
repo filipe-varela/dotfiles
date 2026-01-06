@@ -1,5 +1,6 @@
 return {
   "mason-org/mason.nvim",
+  cmd = "Mason",
   opts = {
     ensure_installed = {
       "stylua",
@@ -25,6 +26,7 @@ return {
       end,
       desc = "GitUi (Root Dir)",
     },
+    { "<leader>cm", "<cmd>Mason<cr>", desc = "Mason" },
   },
   init = function()
     -- delete lazygit keymap for file history
