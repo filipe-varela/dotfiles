@@ -59,6 +59,13 @@ return {
           { "<Leader>K", "<plug>(vimtex-doc-package)", desc = "Vimtex Docs", silent = true },
         },
       },
+      harper_ls = {
+        filetypes = { "tex", "bib", "latex", "md", "txt" },
+      },
+      -- kotlinlsp = {
+      --   filetypes = { "kotlin", "kt", "kts" },
+      --   cmd = { os.getenv("HOME") .. "/.local/bin/kotlin-lsp" },
+      -- },
     },
     setup = {
       clangd = function(_, opts)

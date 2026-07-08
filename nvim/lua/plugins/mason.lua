@@ -9,6 +9,7 @@ return {
       "flake8",
       "gitui",
       "codelldb",
+      "harper-ls",
     },
   },
   keys = {
