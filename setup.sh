@@ -5,7 +5,8 @@ mkdir -p "$XDG_CONFIG_HOME"
 
 ln -sf "$PWD/nvim" "$XDG_CONFIG_HOME"/nvim
 ln -sf "$PWD/alacritty" "$XDG_CONFIG_HOME"/alacritty
+ln -sTf "$PWD/gitui" "$HOME"/gitui
+ln -sTf "$PWD/fish" "$XDG_CONFIG_HOME"/fish
 ln -sTf "$PWD/.Xresources" "$HOME/.Xresources"
 ln -sTf "$PWD/.profile" "$HOME/.profile"
-ln -sTf "$PWD/fish" "$XDG_CONFIG_HOME"/fish
 ln -sTf "$PWD/tmux/.tmux.conf" "$HOME"/.tmux.conf
