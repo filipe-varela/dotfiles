@@ -7,4 +7,7 @@ return {
   },
   ft = { "dart" },
   config = true,
+  opts = {
+    fvm = true,
+  },
 }
