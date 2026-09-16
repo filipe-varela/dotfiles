@@ -1,0 +1,8 @@
+(
+	selection_bg: Some("DarkGray"),
+	selection_fg: Some("#ffffff"),
+	use_selection_fg: Some(false),
+    cmdbar_bg: Some("Black"),
+    command_fg: Some("White"),
+	syntax: Some("InspiredGitHub")
+)
